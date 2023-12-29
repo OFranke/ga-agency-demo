@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import styled from '@emotion/styled'
 import { Layout, LayoutContainer, Heading2, Paragraph } from 'components/shared'
 import { Button } from 'components/shared/button'
+import { page500 } from 'components/screens/500'
 
 const Custom500: NextPage = () => {
 	return (
@@ -12,7 +13,7 @@ const Custom500: NextPage = () => {
 						<Heading2 text={page500.title} isDangerouslySet />
 					</HeadingWrapper>
 					<Paragraph text={page500.text} size="m" />
-					<Button text={page500.button.text} href={page500.button.link} />
+					<Button text={page500.button.text} href={page500.button.link} target="_self" />
 				</Section>
 			</LayoutContainer>
 		</Layout>
